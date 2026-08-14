@@ -1760,6 +1760,11 @@
             transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        .aurave-scrollTop-wrap.animating {
+            opacity: 1 !important;
+            pointer-events: none;
+        }
+
         .aurave-scrollTop-wrap.animating .aurave-scrollTop-btn {
             opacity: 0;
             transform: scale(0.4);
@@ -1778,7 +1783,8 @@
             width: 100vw;
             height: 100vh;
             pointer-events: none;
-            z-index: 99998;
+            z-index: 999999;
+            display: block;
         }
 
         .aurave-mini-bottle {
@@ -2047,9 +2053,11 @@
                 <span>Artisanal distillation &amp; master-aged formulation.</span>
             </div>
         </div>
+    <!-- AURAVÉ FULL-SCREEN SPRAY CANVAS -->
+    <canvas id="scrollTopMistCanvas"></canvas>
+
     <!-- AURAVÉ SIGNATURE SCROLL-TO-TOP BOTTLE SPRAY -->
     <div class="aurave-scrollTop-wrap" id="scrollTopWrap" aria-label="Scroll to top">
-        <canvas id="scrollTopMistCanvas"></canvas>
         <button class="aurave-scrollTop-btn" id="scrollTopBtn" title="Return to Top" aria-label="Return to top">
             <svg class="aurave-scrollTop-icon" viewBox="0 0 32 32" width="28" height="28" fill="none">
                 <!-- Spray Rays -->
@@ -2658,42 +2666,76 @@
                 function Particle(x, y) {
                     this.x = x;
                     this.y = y;
-                    var angle = (Math.random() * 90 - 175) * (Math.PI / 180);
-                    var speed = Math.random() * 20 + 8;
+                    var angle = (Math.random() * 85 - 195) * (Math.PI / 180);
+                    var speed = Math.random() * 24 + 10;
                     this.vx = Math.cos(angle) * speed;
                     this.vy = Math.sin(angle) * speed;
-                    
-                    var isVapor = Math.random() > 0.65;
-                    this.isVapor = isVapor;
-                    this.size = isVapor ? (Math.random() * 16 + 8) : (Math.random() * 3.5 + 1.2);
-                    this.alpha = isVapor ? (Math.random() * 0.22 + 0.1) : (Math.random() * 0.65 + 0.35);
-                    this.decay = isVapor ? (Math.random() * 0.008 + 0.005) : (Math.random() * 0.014 + 0.008);
-                    this.color = Math.random() > 0.3 ? '247, 238, 219' : '223, 192, 123';
+
+                    var r = Math.random();
+                    if (r < 0.5) {
+                        this.type = 'cloud';
+                        this.size = Math.random() * 50 + 25;
+                        this.alpha = Math.random() * 0.6 + 0.35;
+                        this.decay = Math.random() * 0.005 + 0.003;
+                        this.grow = Math.random() * 2.5 + 1.2;
+                        this.color = '255, 220, 130';
+                    } else if (r < 0.85) {
+                        this.type = 'droplet';
+                        this.size = Math.random() * 8 + 4;
+                        this.alpha = Math.random() * 0.6 + 0.4;
+                        this.decay = Math.random() * 0.007 + 0.004;
+                        this.grow = Math.random() * 0.4 + 0.15;
+                        this.color = '255, 248, 230';
+                    } else {
+                        this.type = 'spark';
+                        this.size = Math.random() * 6 + 3;
+                        this.alpha = 0.95;
+                        this.decay = Math.random() * 0.009 + 0.005;
+                        this.grow = 0.1;
+                        this.color = '255, 200, 80';
+                    }
                 }
 
                 Particle.prototype.update = function () {
                     this.x += this.vx;
                     this.y += this.vy;
-                    this.vx *= 0.97;
-                    this.vy *= 0.97;
-                    this.size += this.isVapor ? 0.45 : 0.12;
+                    this.vx *= 0.965;
+                    this.vy *= 0.965;
+                    this.size = Math.max(1, this.size + this.grow);
                     this.alpha -= this.decay;
                 };
 
                 Particle.prototype.draw = function (c) {
                     if (this.alpha <= 0) return;
                     c.save();
-                    c.beginPath();
-                    c.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    c.fillStyle = 'rgba(' + this.color + ',' + this.alpha + ')';
-                    if (this.isVapor) {
-                        c.shadowColor = 'rgba(223, 192, 123, 0.4)';
-                        c.shadowBlur = 20;
+                    c.globalAlpha = Math.max(0, Math.min(1, this.alpha));
+                    
+                    if (this.type === 'cloud') {
+                        c.beginPath();
+                        var radGrad = c.createRadialGradient(this.x, this.y, 0, this.x, this.y, Math.max(1, this.size));
+                        radGrad.addColorStop(0, 'rgba(' + this.color + ', 0.85)');
+                        radGrad.addColorStop(0.4, 'rgba(255, 238, 180, 0.45)');
+                        radGrad.addColorStop(0.8, 'rgba(223, 192, 123, 0.15)');
+                        radGrad.addColorStop(1, 'rgba(223, 192, 123, 0)');
+                        c.fillStyle = radGrad;
+                        c.arc(this.x, this.y, Math.max(1, this.size), 0, Math.PI * 2);
+                        c.fill();
+                    } else if (this.type === 'droplet') {
+                        c.beginPath();
+                        c.arc(this.x, this.y, Math.max(1, this.size), 0, Math.PI * 2);
+                        c.fillStyle = 'rgba(' + this.color + ', 0.9)';
+                        c.shadowColor = '#fff5d6';
+                        c.shadowBlur = 12;
+                        c.fill();
                     } else {
-                        c.shadowColor = 'rgba(247, 238, 219, 0.5)';
-                        c.shadowBlur = 6;
+                        c.beginPath();
+                        c.arc(this.x, this.y, Math.max(1, this.size), 0, Math.PI * 2);
+                        c.fillStyle = 'rgba(' + this.color + ', 1)';
+                        c.shadowColor = '#ffc107';
+                        c.shadowBlur = 20;
+                        c.fill();
                     }
-                    c.fill();
+
                     c.restore();
                 };
 
@@ -2701,7 +2743,7 @@
                     resizeCanvas();
                     var nozzleX = window.innerWidth - 65;
                     var nozzleY = window.innerHeight - 85;
-                    for (var i = 0; i < 180; i++) {
+                    for (var i = 0; i < 400; i++) {
                         particles.push(new Particle(nozzleX, nozzleY));
                     }
                 }
