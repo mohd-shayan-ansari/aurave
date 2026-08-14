@@ -2596,7 +2596,7 @@
 
                 function checkScrollPosition() {
                     if (isAnimating) return;
-                    if (window.scrollY > 300) {
+                    if (window.scrollY > 150) {
                         scrollTopWrap.classList.add('visible');
                     } else {
                         scrollTopWrap.classList.remove('visible');
@@ -2731,10 +2731,16 @@
     <!-- AURAVÉ SIGNATURE SCROLL-TO-TOP BOTTLE SPRAY -->
     <div class="aurave-scrollTop-wrap" id="scrollTopWrap" aria-label="Scroll to top">
         <button class="aurave-scrollTop-btn" id="scrollTopBtn" title="Return to Top" aria-label="Return to top">
-            <svg class="aurave-scrollTop-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v5M12 8h-3a1 1 0 00-1 1v2h8V9a1 1 0 00-1-1h-3z" fill="#dfc07b" />
-                <path d="M9 11h6v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V11z" stroke="#dfc07b" stroke-width="1.5" fill="rgba(24,20,16,0.6)" />
-                <path d="M12 3l-2-2m2 2l2-2" stroke="#f7eedb" stroke-width="1.2" stroke-linecap="round" />
+            <svg class="aurave-scrollTop-icon" viewBox="0 0 32 32" width="28" height="28" fill="none">
+                <!-- Spray Rays -->
+                <path d="M16 4V1M11 6L9.5 4.5M21 6l1.5-1.5" stroke="#f7eedb" stroke-width="1.8" stroke-linecap="round" />
+                <!-- Atomizer Nozzle -->
+                <rect x="13" y="7" width="6" height="4" rx="1" fill="#f7eedb" />
+                <rect x="11.5" y="11" width="9" height="4" rx="1" fill="#dfc07b" />
+                <!-- Perfume Bottle -->
+                <rect x="7" y="15" width="18" height="15" rx="3.5" fill="rgba(30, 24, 18, 0.95)" stroke="#dfc07b" stroke-width="1.6" />
+                <rect x="11" y="19" width="10" height="7" fill="none" stroke="#f7eedb" stroke-width="0.8" opacity="0.8" />
+                <text x="16" y="25" text-anchor="middle" font-family="Italiana, serif" font-size="7.5" fill="#dfc07b" font-weight="bold">A</text>
             </svg>
         </button>
 
