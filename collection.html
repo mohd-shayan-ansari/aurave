@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Vault Collection — AURAVÉ | 14 Parfums &amp; 10 Pure Attars</title>
+    <meta name="description"
+        content="Explore the full AURAVÉ vault — 14 master Eau de Parfums and 10 hand-aged pure Attar oils available for direct purchase with complimentary shipping across India." />
+    <meta name="keywords" content="Perfume, Best perfume for men, attar, Ittar, attar perfume, oud attar, best attar for women, best attar for men, Perfume for men, Perfume for women, Best perfume for women, Perfume set for women, Gift for Men, Oud perfume, Ceo perfume, Long lasting perfume for women, Perfume gift pack for her, Perfume gift pack for him" />
+    <meta property="og:title" content="The Vault Collection — AURAVÉ Luxury Fragrances" />
+    <meta property="og:description" content="Shop 14 Eau de Parfums & 10 Pure Attars with complimentary luxury packaging and fast delivery." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.jpg" />
+    <meta name="theme-color" content="#0c0a08" />
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+    <link rel="apple-touch-icon" href="assets/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ================= RESET & BASE ================= */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --void: #0c0a08;
+            --ink: #141110;
+            --ash: #1b1613;
+            --ash-2: #241e18;
+            --bone: #efe7d8;
+            --bone-dim: #b8ac97;
+            --gold: #c9a24b;
+            --gold-soft: #e6cd93;
+            --oud: #8a3a22;
+            --oud-deep: #4a1d11;
+            --rose: #c98a72;
+            --line: rgba(201, 162, 75, 0.16);
+            --font-display: 'Italiana', serif;
+            --font-serif: 'Fraunces', serif;
+            --font-sans: 'Jost', sans-serif;
+            --container: 1240px;
+            --s1: clamp(.5rem, .42rem + .35vw, .75rem);
+            --s2: clamp(1rem, .8rem + .8vw, 1.5rem);
+            --s3: clamp(1.75rem, 1.3rem + 1.8vw, 3rem);
+            --s4: clamp(3rem, 2rem + 4vw, 6rem);
+            --s5: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+            --ease: cubic-bezier(.16, 1, .3, 1);
+            --dur: .9s;
+        }
+
+        body {
+            background: var(--void);
+            color: var(--bone);
+            font-family: var(--font-sans);
+            font-weight: 300;
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        button,
+        input {
+            font: inherit;
+            color: inherit;
+            background: none;
+            border: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            font-weight: 300;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 4px;
+        }
+
+        ::selection {
+            background: var(--gold);
+            color: var(--void);
+        }
+
+        .container {
+            max-width: var(--container);
+            margin-inline: auto;
+            padding-inline: clamp(1.25rem, 4vw, 3rem);
+        }
+
+        /* thin gold scrollbar */
+        ::-webkit-scrollbar {
+            height: 6px;
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--line);
+            border-radius: 4px;
+        }
+
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--line) transparent;
+        }
+
+        /* ================= UTILITIES ================= */
+        .eyebrow {
+            font-family: var(--font-sans);
+            font-size: .72rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: .7em;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 26px;
+            height: 1px;
+            background: var(--gold);
+            flex: none;
+        }
+
+        .eyebrow.center {
+            justify-content: center;
+        }
+
+        .h-display {
+            font-family: var(--font-display);
+            font-weight: 400;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+            color: var(--bone);
+        }
+
+        .h-serif {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            letter-spacing: -.01em;
+            color: var(--bone);
+        }
+
+        .h-serif em {
+            font-style: italic;
+            color: var(--gold-soft);
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .6em;
+            padding: 1em 2em;
+            font-family: var(--font-sans);
+            font-size: .78rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: transform .5s var(--ease), background .4s ease, color .4s ease, border-color .4s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--void);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-soft);
+            transform: translateY(-2px);
+        }
+
+        .btn-ghost {
+            border: 1px solid var(--line);
+            color: var(--bone);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--gold);
+            color: var(--gold-soft);
+            transform: translateY(-2px);
+        }
+
+        /* reveal system */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 1s var(--ease), transform 1s var(--ease);
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger>* {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .8s var(--ease), transform .8s var(--ease);
+        }
+
+        .reveal-stagger.in>* {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .word {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+        }
+
+        .word>span {
+            display: inline-block;
+            transform: translateY(110%);
+            transition: transform .9s var(--ease);
+        }
+
+        .word.in>span {
+            transform: translateY(0);
+        }
+
+        .char {
+            display: inline-block;
+            transform: translateY(100%) rotate(4deg);
+            opacity: 0;
+            transition: transform .7s var(--ease), opacity .7s var(--ease);
+        }
+
+        .char.in {
+            transform: translateY(0) rotate(0);
+            opacity: 1;
+        }
+
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+
+/* ================= AURAVÉ PREMIUM HEADER BRAND ================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+
+    font-family: var(--font-display);
+    font-size: 1.68rem;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+
+    color: #f5e6c5;
+    text-decoration: none;
+
+    text-shadow:
+        0 0 10px rgba(223, 192, 123, 0.16),
+        0 0 24px rgba(223, 192, 123, 0.08);
+
+    opacity: 1;
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.brand-logo-img {
+    width: 52px;
+    height: 52px;
+
+    display: block;
+    flex-shrink: 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 1.5px solid #d9b96b;
+
+    background: #0b0907;
+
+    filter:
+        brightness(1.08)
+        contrast(1.08)
+        saturate(1.08);
+
+    box-shadow:
+        0 0 10px rgba(223, 192, 123, 0.24),
+        0 0 24px rgba(223, 192, 123, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.brand:hover {
+    color: #fff4d8;
+
+    text-shadow:
+        0 0 12px rgba(223, 192, 123, 0.22),
+        0 0 28px rgba(223, 192, 123, 0.10);
+}
+
+.brand:hover .brand-logo-img {
+    transform: scale(1.045);
+
+    border-color: #f0d58f;
+
+    box-shadow:
+        0 0 14px rgba(223, 192, 123, 0.32),
+        0 0 30px rgba(223, 192, 123, 0.15);
+}
+
+        /* ================= PRELOADER ================= */
+        .preloader {
+            position: fixed;
+            inset: 0;
+            background: var(--void);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity .8s var(--ease), visibility .8s var(--ease);
+        }
+
+        .preloader.done {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-logo-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 1.5px solid #dfc07b;
+            box-shadow: 0 0 20px rgba(223, 192, 123, 0.25);
+            background: #ffffff;
+            filter: brightness(1.12) contrast(1.18);
+            margin-bottom: 1.2rem;
+            object-fit: cover;
+        }
+
+        .preloader-mark {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: .25em;
+            color: var(--bone);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+
+        html.fonts-loaded .preloader-mark,
+        html.loaded .preloader-mark {
+            opacity: 1;
+        }
+
+        .preloader-sub {
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 0.3rem;
+        }
+
+        .preloader-bar {
+            width: 140px;
+            height: 1px;
+            background: var(--line);
+            margin-top: 1.8rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .preloader-bar span {
+            position: absolute;
+            inset: 0;
+            background: var(--gold);
+            width: 0%;
+            transition: width 1.2s var(--ease);
+        }
+
+        .collection-eyebrow,
+        .collection-sub,
+        .collection-actions {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        }
+
+        .collection-eyebrow.in,
+        .collection-sub.in,
+        .collection-actions.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= CURSOR & GRAIN ================= */
+        .grain {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 999;
+            opacity: .035;
+        }
+
+        .vignette {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 998;
+            background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, .6) 100%);
+        }
+
+        .cursor-dot,
+        .cursor-ring {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 10000;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        html.has-cursor .cursor-dot,
+        html.has-cursor .cursor-ring {
+            opacity: 1;
+        }
+
+        .cursor-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+        }
+
+        .cursor-ring {
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(201, 162, 75, .4);
+            transition: width .3s var(--ease), height .3s var(--ease), border-color .3s ease;
+        }
+
+        .cursor-ring.pop {
+            width: 58px;
+            height: 58px;
+            border-color: var(--gold);
+            background: rgba(201, 162, 75, .05);
+        }
+
+        /* ================= NAVIGATION ================= */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            opacity: 1;
+            padding-block: 1.25rem;
+            background: rgba(10, 8, 6, 0.94);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(223, 192, 123, 0.18);
+            transition: padding .4s ease, background .4s ease, border-color .4s ease;
+        }
+
+        .nav.scrolled {
+            padding-block: .85rem;
+            background: rgba(8, 7, 5, 0.96);
+            border-bottom-color: rgba(223, 192, 123, 0.28);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            opacity: 1;
+        }
+
+        /* ================= HEADER NAVIGATION ================= */
+
+        .nav .nav-inner > a:not(.brand) {
+            color: #d8c9aa;
+            opacity: 1;
+            transition:
+                color 0.3s ease,
+                text-shadow 0.3s ease;
+        }
+
+        .nav .nav-inner > a:not(.brand):hover {
+            color: #f2d99a;
+
+            text-shadow:
+                0 0 10px rgba(223, 192, 123, 0.18);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-size: .84rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: #e2d7c5;
+            font-weight: 400;
+            transition: color .3s ease, text-shadow .3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #dfc07b;
+            transition: width .3s ease;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: #dfc07b;
+            text-shadow: 0 0 10px rgba(223, 192, 123, 0.25);
+        }
+
+        .nav-links a.active::after,
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+        }
+
+        .cart-icon-btn {
+            position: relative;
+            background: rgba(24, 20, 16, 0.8);
+            border: 1px solid rgba(223, 192, 123, 0.32);
+            color: #f7eedb;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease, background .3s ease;
+        }
+
+        .cart-icon-btn:hover {
+            border-color: #dfc07b;
+            box-shadow: 0 0 14px rgba(223, 192, 123, 0.22);
+            background: rgba(36, 29, 24, 0.9);
+            transform: scale(1.04);
+        }
+
+        .cart-badge-count {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background: var(--oud);
+            color: #f7eedb;
+            font-size: 0.65rem;
+            font-weight: 600;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #080705;
+        }
+
+        .nav .btn-ghost {
+            border: 1px solid rgba(223, 192, 123, 0.35);
+            color: #f7eedb;
+            padding: .75em 1.6em;
+            font-size: .78rem;
+            letter-spacing: .16em;
+            transition: border-color .3s ease, color .3s ease, background .3s ease, box-shadow .3s ease;
+        }
+
+        .nav .btn-ghost:hover {
+            border-color: #dfc07b;
+            color: #dfc07b;
+            background: rgba(223, 192, 123, 0.06);
+            box-shadow: 0 0 14px rgba(223, 192, 123, 0.18);
+        }
+
+        .burger {
+            display: none;
+            width: 40px;
+            height: 40px;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 902;
+        }
+
+        .burger span {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: var(--bone);
+            transition: transform .4s ease, opacity .4s ease;
+        }
+
+        .mobile-panel {
+            position: fixed;
+            inset: 0;
+            background: var(--ink);
+            z-index: 901;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .4s ease, visibility .4s ease;
+        }
+
+        html.menu-open .mobile-panel {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-panel a {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--bone);
+            letter-spacing: .08em;
+        }
+
+        /* ================= COLLECTION HERO & GRID ================= */
+        .collection-hero {
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .search-filter-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            margin-block: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--ash);
+            border: 1px solid var(--line);
+            padding: 0.9rem 1.4rem 0.9rem 3rem;
+            border-radius: 999px;
+            color: var(--bone);
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--gold);
+            outline: none;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--bone-dim);
+            pointer-events: none;
+        }
+
+        .filters {
+            display: flex;
+            gap: .6rem;
+            background: var(--ash);
+            padding: .35rem;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+        }
+
+        .filter-btn {
+            padding: .6rem 1.6rem;
+            border-radius: 999px;
+            font-size: .8rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background .3s ease, color .3s ease;
+            color: var(--bone-dim);
+        }
+
+        .filter-btn[aria-pressed="true"] {
+            background: var(--gold);
+            color: var(--void);
+            font-weight: 500;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2.5rem;
+            padding-block: 3rem 6rem;
+            perspective: 1000px;
+        }
+
+        .card {
+            background: var(--ash);
+            border: 1px solid var(--line);
+            padding: 2rem;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color .4s ease, transform .4s var(--ease), box-shadow .4s ease;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+
+        .card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65), 0 0 20px rgba(201, 162, 75, 0.15);
+            transform: translateY(-8px);
+        }
+
+        .card-badge-soldout,
+        .card-badge-instock {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(201, 162, 75, 0.18);
+            color: #f7eedb;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 0.35em 0.85em;
+            border-radius: 999px;
+            border: 1px solid rgba(223, 192, 123, 0.45);
+            backdrop-filter: blur(4px);
+            z-index: 3;
+        }
+
+        .btn-card-add {
+            background: #dfc07b;
+            color: #0c0a08;
+            border: 1px solid #dfc07b;
+            padding: 0.65em 1.2em;
+            border-radius: 999px;
+            font-size: 0.76rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-card-add:hover {
+            background: #f7eedb;
+            box-shadow: 0 0 14px rgba(223, 192, 123, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .cart-item-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-block: 1rem;
+            border-bottom: 1px solid rgba(223, 192, 123, 0.15);
+        }
+
+        .cart-qty-ctrl {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(24, 20, 16, 0.8);
+            border: 1px solid rgba(223, 192, 123, 0.3);
+            border-radius: 999px;
+            padding: 0.2rem 0.6rem;
+        }
+
+        .cart-qty-btn {
+            background: none;
+            border: none;
+            color: #f7eedb;
+            font-size: 1rem;
+            cursor: pointer;
+            padding-inline: 0.3rem;
+        }
+
+        .cart-qty-btn:hover {
+            color: #dfc07b;
+        }
+
+        .checkout-input {
+            width: 100%;
+            background: rgba(24, 20, 16, 0.9);
+            border: 1px solid rgba(223, 192, 123, 0.35);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            color: #f7eedb;
+            font-size: 0.88rem;
+            margin-bottom: 0.7rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .checkout-input:focus,
+        .checkout-select:focus {
+            border-color: #dfc07b;
+            outline: none;
+            box-shadow: 0 0 10px rgba(223, 192, 123, 0.25);
+        }
+
+        .checkout-select {
+            width: 100%;
+            background: rgba(24, 20, 16, 0.9);
+            border: 1px solid rgba(223, 192, 123, 0.35);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            color: #f7eedb;
+            font-size: 0.88rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .card-art-box {
+            width: 100%;
+            height: 190px;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            transition: border-color 0.4s ease;
+        }
+
+        .card:hover .card-art-box {
+            border-color: var(--gold);
+        }
+
+        .card-art-bottle {
+            width: 65px;
+            height: 130px;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+            transition: transform 0.4s var(--ease);
+        }
+
+        .card:hover .card-art-bottle {
+            transform: scale(1.08) translateY(-4px);
+        }
+
+        .card h3 {
+            font-family: var(--font-display);
+            font-size: 1.65rem;
+            margin-block: .4rem .6rem;
+            color: var(--bone);
+        }
+
+        .card .desc {
+            font-size: .88rem;
+            color: var(--bone-dim);
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .notes-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .notes-list span {
+            font-size: .7rem;
+            background: rgba(201, 162, 75, .08);
+            border: 1px solid rgba(201, 162, 75, .2);
+            padding: .2em .6em;
+            border-radius: 6px;
+            color: var(--gold-soft);
+        }
+
+        .card-foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--line);
+            padding-top: 1.2rem;
+            margin-top: auto;
+        }
+
+        .price-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--gold-soft);
+        }
+
+        .stock-label {
+            font-size: 0.68rem;
+            color: var(--rose);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .btn-card-notify {
+            padding: 0.6em 1.2em;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            border-radius: 999px;
+            background: transparent;
+            border: 1px solid var(--line);
+            color: var(--bone);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .btn-card-notify {
+            border-color: var(--gold);
+            background: var(--gold);
+            color: var(--void);
+        }
+
+        /* ================= MODAL & RESTOCK DRAWER ================= */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(12, 10, 8, 0.88);
+            backdrop-filter: blur(12px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        .modal-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-card {
+            background: var(--ink);
+            border: 1px solid var(--gold);
+            border-radius: 24px;
+            max-width: 620px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 2.5rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: scale(0.95);
+            transition: transform 0.4s var(--ease);
+        }
+
+        .modal-backdrop.active .modal-card {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            font-size: 1.8rem;
+            color: var(--bone-dim);
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--gold);
+        }
+
+        .modal-header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .scent-pyramid {
+            background: var(--ash);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 1.2rem;
+            margin-block: 1.2rem;
+        }
+
+        .scent-pyramid-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.82rem;
+            padding-block: 0.4rem;
+            border-bottom: 1px solid rgba(201, 162, 75, 0.1);
+        }
+
+        .scent-pyramid-row:last-child {
+            border-bottom: none;
+        }
+
+        .scent-label {
+            color: var(--gold);
+            font-weight: 500;
+            width: 100px;
+        }
+
+        .scent-val {
+            color: var(--bone-dim);
+            text-align: right;
+            flex: 1;
+        }
+
+        .metrics-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-pill {
+            background: var(--ash-2);
+            border: 1px solid var(--line);
+            padding: 0.7rem 1rem;
+            border-radius: 10px;
+            font-size: 0.78rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .metric-pill span {
+            color: var(--gold-soft);
+            font-weight: 500;
+        }
+
+        .modal-restock-box {
+            background: rgba(138, 58, 34, 0.15);
+            border: 1px solid var(--oud);
+            padding: 1.2rem;
+            border-radius: 16px;
+            margin-top: 1.2rem;
+        }
+
+        .modal-restock-box h4 {
+            font-family: var(--font-serif);
+            color: var(--gold-soft);
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .modal-restock-box p {
+            font-size: 0.82rem;
+            color: var(--bone-dim);
+            margin-bottom: 1rem;
+        }
+
+        .modal-restock-form {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .modal-restock-form input {
+            flex: 1;
+            background: var(--void);
+            border: 1px solid var(--line);
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            color: var(--bone);
+            font-size: 0.82rem;
+        }
+
+        .modal-restock-form input:focus {
+            border-color: var(--gold);
+            outline: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--void);
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            max-width: 320px;
+        }
+
+        .footer-brand p {
+            color: var(--bone-dim);
+            font-size: .88rem;
+            margin-top: 1rem;
+        }
+
+        .footer-cols {
+            display: flex;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+        }
+
+        .footer-col h4 {
+            font-size: .78rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: .4rem;
+        }
+
+        .footer-col a,
+        .footer-col span {
+            font-size: .85rem;
+            color: var(--bone-dim);
+            transition: color .3s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--gold-soft);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--line);
+            padding-top: 2rem;
+            font-size: .78rem;
+            color: var(--bone-dim);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        @media (max-width: 900px) {
+
+            .nav-links,
+            .nav-cta .btn {
+                display: none;
+            }
+
+            .burger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <img src="assets/logo.jpg" alt="Auravé Fine Fragrances &amp; Attars Logo" class="preloader-logo-img">
+        <div class="preloader-mark" id="preloaderMark">
+            AURAVÉ
+            <span class="preloader-sub">COLLECTION VAULT</span>
+        </div>
+        <div class="preloader-bar"><span id="preloaderBar"></span></div>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand" title="Auravé Fine Fragrances &amp; Attars">
+                <img src="assets/logo.jpg" alt="Auravé Logo" class="brand-logo-img">
+                Auravé
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="collection.html" class="active">Collections</a>
+            </nav>
+            <div class="nav-cta">
+                <button class="cart-icon-btn" id="cartOpenBtn" aria-label="View waitlist cart" title="Restock Waitlist">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    <span class="cart-badge-count" id="cartBadge">0</span>
+                </button>
+                <a href="index.html#notify" class="btn btn-ghost">Notify Me</a>
+                <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE PANEL -->
+    <div class="mobile-panel" id="mobilePanel">
+        <img src="assets/logo.jpg" alt="Auravé Logo" class="brand-logo-img" style="width:74px;height:74px;">
+        <a href="index.html">Home</a>
+        <a href="collection.html" class="active">Collections</a>
+        <a href="index.html#notify" class="btn btn-primary">Join Restock Waitlist</a>
+    </div>
+
+    <main id="main">
+        <!-- COLLECTION HERO SECTION -->
+        <section class="collection-hero">
+            <div class="container">
+                <p class="eyebrow collection-eyebrow">The Complete Vault</p>
+                <h1 class="h-serif collection-title" style="font-size:clamp(2.4rem,5vw,3.8rem);margin-top:0.8rem;">24 Blends · 100% Handcrafted Batch</h1>
+                <p class="collection-sub" style="color:var(--bone-dim);max-width:56ch;margin-top:0.8rem;">Explore our 14 Eau de Parfums and 10 hand-aged pure Attar oils. Every single creation is currently sold out while our next master reserve vats age.</p>
+
+                <!-- Search & Filters -->
+                <div class="search-filter-wrap collection-actions">
+                    <div class="search-box">
+                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" class="search-input" id="searchInput"
+                            placeholder="Search by fragrance name or note (e.g. Saffron, Oud, Rose, Vetiver)..."
+                            aria-label="Search collection">
+                    </div>
+                    <div class="filters" role="tablist" aria-label="Filter collection">
+                        <button class="filter-btn" data-filter="all" aria-pressed="true" id="filterAllBtn">All (24)</button>
+                        <button class="filter-btn" data-filter="parfum" aria-pressed="false" id="filterParfumBtn">Parfums (14)</button>
+                        <button class="filter-btn" data-filter="attar" aria-pressed="false" id="filterAttarBtn">Attars (10)</button>
+                    </div>
+                </div>
+
+                <!-- 24 Products Grid -->
+                <div class="collection-grid" id="collectionGrid">
+                    <!-- Dynamic rendering -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- VISUALLY HIDDEN SEO KEYWORDS FOR SEARCH ENGINE OPTIMIZATION -->
+    <div class="visually-hidden" aria-hidden="true">
+        <h2>Popular Search Terms &amp; Collections</h2>
+        <p>Perfume, Best perfume for men, attar, Ittar, attar perfume, oud attar, best attar for women, best attar for men, Perfume for men, Vitamin C Face Wash, Perfume for women, Best perfume for women, Perfume set for women, Gift for Men, Face wash for oily skin, Body scrub, Dark circle, Perfume for girls, Dark circles removal cream, Acne face wash, under eye cream, Gift sets for women, Body wash for women, Pocket perfume for men, De tan face pack, Pimple removal cream, Lip scrub, Tan removal face pack, Face wash for acne, Exfoliate scrub, Gift set for men, Coffee Body Scrub, Best long lasting perfume for men, Perfumes for men under 500, Perfumes for women under 500, Perfume gift sets, Oud perfume, Ceo perfume, Under eye cream for dark circles, Acne cream, Vitamin c cream for face, Body lotion for women, Long lasting perfume for women, Perfume gift pack for her, Perfume gift pack for him, Charcoal face wash, Body wash for men, Best shower gel for women, Shower Gel for men and Women, Body lotion for dry skin, Body Lotion for men, Body Lotion for women, Shower Gel and Perfume Combo, Shower Travel Kit, Travel Mini Kit, Birthday Gift for Women/Girls, Wedding Gifts for Couples, Gifts for Men Under 500, Gifts for Women Under 500, Diwali Gift Ideas, Corporate Gifts</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="assets/logo.jpg" alt="Auravé Logo" class="footer-logo-img">
+                        Auravé
+                    </a>
+                    <p>Fine fragrances &amp; hand-aged attars. 14 EDPs &amp; 10 Pure Attar oils. Every scent leaves a wave.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <a href="index.html">Home</a>
+                        <a href="collection.html">Collections (24)</a>
+                        <a href="index.html#craft">The Craft</a>
+                        <a href="index.html#story">Our Story</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <span>Instagram @aurave.co</span>
+                        <span>Journal</span>
+                        <span>hello@aurave.co</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Auravé Fine Fragrances &amp; Attars. All rights reserved.</span>
+                <span>Artisanal distillation &amp; master-aged formulation.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL & ITEM RESTOCK MODAL -->
+    <div class="modal-backdrop" id="productModal" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div id="modalContent">
+                <!-- Dynamically rendered -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CART / SHOPPING BAG DRAWER -->
+    <div class="modal-backdrop" id="cartDrawer" aria-hidden="true">
+        <div class="modal-card" style="max-width:520px;width:95%;">
+            <button class="modal-close" id="cartClose" aria-label="Close cart">&times;</button>
+            <div class="modal-header-brand" style="border-bottom:1px solid rgba(223, 192, 123, 0.2);padding-bottom:1rem;">
+                <img src="assets/logo.jpg" alt="Auravé Logo" class="brand-logo-img" style="width:48px;height:48px;">
+                <div>
+                    <h3 class="h-serif" style="font-size:1.4rem;color:#f7eedb;">Your Shopping Bag</h3>
+                    <p style="font-size:0.75rem;color:var(--gold-soft);letter-spacing:0.1em;text-transform:uppercase;">✦ Complimentary Luxury Packaging Included</p>
+                </div>
+            </div>
+            
+            <div id="cartItemList" style="max-height:300px;overflow-y:auto;margin-block:1rem;">
+                <!-- Dynamically filled with cart items -->
+            </div>
+
+            <div id="cartSummaryBox" style="border-top:1px solid rgba(223, 192, 123, 0.2);padding-top:1.2rem;margin-top:1rem;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
+                    <span style="color:var(--bone-dim);font-size:0.9rem;">Subtotal</span>
+                    <span id="cartSubtotalVal" style="font-family:var(--font-serif);font-size:1.4rem;color:#f7eedb;">₹0</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:var(--gold-soft);margin-bottom:1.2rem;">
+                    <span>Express Shipping</span>
+                    <span>Complimentary (FREE)</span>
+                </div>
+                <button class="btn btn-primary" id="openCheckoutBtn" style="width:100%;">Proceed to Checkout →</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+        <div class="modal-card" style="max-width:560px;width:95%;">
+            <button class="modal-close" id="checkoutClose" aria-label="Close checkout">&times;</button>
+            <div id="checkoutFormBox">
+                <div class="modal-header-brand" style="border-bottom:1px solid rgba(223, 192, 123, 0.2);padding-bottom:0.8rem;margin-bottom:1rem;">
+                    <img src="assets/logo.jpg" alt="Auravé Logo" class="brand-logo-img" style="width:48px;height:48px;">
+                    <div>
+                        <h3 class="h-serif" style="font-size:1.4rem;color:#f7eedb;">Auravé Express Checkout</h3>
+                        <p style="font-size:0.75rem;color:var(--gold-soft);letter-spacing:0.1em;text-transform:uppercase;">✦ Secure Order &amp; Express Delivery</p>
+                    </div>
+                </div>
+
+                <div style="background:rgba(24,20,16,0.6);border:1px solid rgba(223,192,123,0.2);padding:0.9rem;border-radius:12px;margin-bottom:1.2rem;">
+                    <div style="display:flex;justify-content:space-between;font-size:0.85rem;color:var(--bone-dim);margin-bottom:0.3rem;">
+                        <span>Order Items</span>
+                        <strong id="coItemSummaryText" style="color:#f7eedb;">0 Items</strong>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;font-size:1.1rem;color:#f7eedb;">
+                        <span>Total Payable</span>
+                        <strong id="coTotalVal" style="color:#dfc07b;font-family:var(--font-serif);">₹0</strong>
+                    </div>
+                </div>
+
+                <form id="checkoutForm" onsubmit="return false;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.7rem;">
+                        <input type="text" id="coFullName" class="checkout-input" placeholder="Full Name *" required>
+                        <input type="tel" id="coPhone" class="checkout-input" placeholder="Mobile Number *" required>
+                    </div>
+                    <input type="email" id="coEmail" class="checkout-input" placeholder="Email Address (for order receipt) *" required>
+                    <input type="text" id="coAddress" class="checkout-input" placeholder="Delivery Address (House/Street/Area) *" required>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.7rem;">
+                        <input type="text" id="coPincode" class="checkout-input" placeholder="Pincode *" required>
+                        <input type="text" id="coCity" class="checkout-input" placeholder="City / District *" required>
+                    </div>
+
+                    <label style="font-size:0.82rem;color:var(--gold-soft);letter-spacing:0.08em;text-transform:uppercase;display:block;margin-block:0.6rem 0.3rem;">Payment Method</label>
+                    <select id="coPaymentMethod" class="checkout-select">
+                        <option value="COD">Cash on Delivery (Pay when delivered)</option>
+                        <option value="UPI">UPI / GPay / PhonePe / Paytm</option>
+                        <option value="WhatsApp">Order directly via WhatsApp Concierge</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary" id="placeOrderBtn" style="width:100%;margin-top:0.8rem;">Confirm &amp; Place Order ✦</button>
+                </form>
+            </div>
+
+            <!-- ORDER CONFIRMATION SCREEN (Shown after order placement) -->
+            <div id="checkoutSuccessBox" style="display:none;text-align:center;padding:1.5rem 0.5rem;">
+                <div style="width:64px;height:64px;border-radius:50%;background:rgba(223,192,123,0.15);border:1px solid #dfc07b;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;color:#dfc07b;font-size:2rem;">✓</div>
+                <p class="eyebrow center" style="color:var(--gold-soft);">Order Successfully Placed</p>
+                <h2 class="h-serif" style="font-size:1.8rem;color:#f7eedb;margin-block:0.5rem;">Thank you for your order.</h2>
+                <p style="font-size:0.92rem;color:var(--bone);margin-bottom:0.4rem;">Order Reference: <strong id="coOrderRef" style="color:#dfc07b;">#AV-00000</strong></p>
+                <p style="font-size:0.85rem;color:var(--bone-dim);max-width:44ch;margin:0 auto 1.5rem;">Your luxury reserve fragrance package is being prepared for dispatch. Delivery target: <strong>3 to 5 Business Days</strong>.</p>
+                <button class="btn btn-ghost" id="coDoneBtn" style="padding:0.7em 2em;">Back to Collection</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        (function () {
+            "use strict";
+
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var canHover = window.matchMedia('(hover: hover)').matches;
+            var html = document.documentElement;
+
+            /* ---------- 24 PRODUCTS CATALOG DATA ---------- */
+            var PRODUCTS = [
+                // --- 14 PARFUMS ---
+                { id: 'p1', cat: 'parfum', name: 'Amber Hour', type: 'Parfum · EDP', desc: 'Tonka bean and warm amber with a sliver of clove — built for the hour the sun starts leaving.', price: 4200, size: '50ml', notes: ['Bergamot', 'Amber', 'Tonka Bean', 'Cedarwood'], topNotes: 'Bergamot, Clove Leaf', heartNotes: 'Warm Amber, Labdanum', baseNotes: 'Tonka Bean, Atlas Cedarwood', longevity: '10-12 Hours', sillage: 'Strong Projection', stock: 15, gradient: 'linear-gradient(135deg, #1c1409, #3d260c, #c9a24b)' },
+                { id: 'p2', cat: 'parfum', name: 'Velvet Oud', type: 'Parfum · EDP', desc: 'Dark oud softened with Damask rose and a trace of golden saffron. Bold and deeply magnetic.', price: 4800, size: '50ml', notes: ['Saffron', 'Damask Rose', 'Oud', 'Musk'], topNotes: 'Kashmiri Saffron, Cinnamon Leaf', heartNotes: 'Damask Rose, Incense', baseNotes: 'Smoked Oud Wood, Dark Musk', longevity: '12+ Hours', sillage: 'Heavy Sillage', stock: 15, gradient: 'linear-gradient(135deg, #2b0b08, #521911, #8a3a22)' },
+                { id: 'p3', cat: 'parfum', name: 'Bare Musk', type: 'Parfum · EDP', desc: 'White musk and ambrette seed — the intimate scent of warm skin and clean cotton linen.', price: 3900, size: '50ml', notes: ['Ambrette', 'White Musk', 'Iris', 'Sandalwood'], topNotes: 'Ambrette Seed, White Tea', heartNotes: 'Florentine Iris, Cotton Accord', baseNotes: 'White Musk, Creamy Sandalwood', longevity: '8-10 Hours', sillage: 'Intimate Skin Scent', stock: 15, gradient: 'linear-gradient(135deg, #15181c, #272d36, #b8ac97)' },
+                { id: 'p4', cat: 'parfum', name: 'Saffron Dusk', type: 'Parfum · EDP', desc: 'Crushed Kashmiri saffron, green cardamom, and smoked Tuscan leather woven with rich amber.', price: 5200, size: '50ml', notes: ['Saffron', 'Cardamom', 'Leather', 'Amber'], topNotes: 'Green Cardamom, Pink Pepper', heartNotes: 'Kashmiri Saffron, Smoked Leather', baseNotes: 'Amber Resins, Golden Patchouli', longevity: '12+ Hours', sillage: 'Strong Projection', stock: 15, gradient: 'linear-gradient(135deg, #2d1800, #542d00, #c9a24b)' },
+                { id: 'p5', cat: 'parfum', name: 'Solstice Bloom', type: 'Parfum · EDP', desc: 'Night-blooming jasmine and orange blossom steeped in sun-warmed amber wood.', price: 4100, size: '50ml', notes: ['Jasmine', 'Orange Blossom', 'White Tea', 'Amber'], topNotes: 'Mandarin Zest, White Tea', heartNotes: 'Night Jasmine, Orange Blossom', baseNotes: 'Soft Amberwood, Cashmere Musk', longevity: '9-11 Hours', sillage: 'Moderate Projection', stock: 15, gradient: 'linear-gradient(135deg, #1c180f, #3b3017, #e6cd93)' },
+                { id: 'p6', cat: 'parfum', name: 'Smokey Cypress', type: 'Parfum · EDP', desc: 'Crisp Italian cypress needle, crushed pine, and smoked vetiver over glowing incense embers.', price: 4500, size: '50ml', notes: ['Cypress', 'Smoked Vetiver', 'Frankincense', 'Birch'], topNotes: 'Italian Cypress, Juniper Berry', heartNotes: 'Smoked Vetiver, Omani Incense', baseNotes: 'Birch Tar, Cedarwood', longevity: '10-12 Hours', sillage: 'Moderate-Heavy', stock: 15, gradient: 'linear-gradient(135deg, #0f1c16, #1c362a, #528a70)' },
+                { id: 'p7', cat: 'parfum', name: 'Celestial Iris', type: 'Parfum · EDP', desc: 'Powdery Florentine iris root, green violet leaves, and velvet sandalwood oil.', price: 4900, size: '50ml', notes: ['Iris Root', 'Violet Leaf', 'Sandalwood', 'Vanilla'], topNotes: 'Violet Leaf, Bergamot Zest', heartNotes: 'Florentine Iris Concrete', baseNotes: 'Sandalwood, Vanilla Bean', longevity: '10-12 Hours', sillage: 'Moderate Projection', stock: 15, gradient: 'linear-gradient(135deg, #181324, #2c2142, #987bc9)' },
+                { id: 'p8', cat: 'parfum', name: 'Noir Vetiver', type: 'Parfum · EDP', desc: 'Earth-deep Bourbon vetiver spiked with pink pepper, black truffle, and dark patchouli.', price: 4300, size: '50ml', notes: ['Bourbon Vetiver', 'Pink Pepper', 'Dark Patchouli', 'Guaiac'], topNotes: 'Pink Pepper, Grapefruit Peel', heartNotes: 'Bourbon Vetiver, Black Truffle', baseNotes: 'Dark Patchouli, Guaiacwood', longevity: '10+ Hours', sillage: 'Strong Projection', stock: 15, gradient: 'linear-gradient(135deg, #171b12, #2c3621, #7f9964)' },
+                { id: 'p9', cat: 'parfum', name: 'Midnight Bourbon', type: 'Parfum · EDP', desc: 'Oak cask bourbon, Madagascar vanilla pod, and cured tobacco leaves steeped in honeyed amber.', price: 5400, size: '50ml', notes: ['Oak Bourbon', 'Vanilla Pod', 'Tobacco Leaf', 'Honey Amber'], topNotes: 'Aged Bourbon, Spiced Plum', heartNotes: 'Cured Tobacco Leaf, Cocoa', baseNotes: 'Madagascar Vanilla, Amber', longevity: '14+ Hours', sillage: 'Heavy Sillage', stock: 15, gradient: 'linear-gradient(135deg, #26150b, #452410, #c98a3b)' },
+                { id: 'p10', cat: 'parfum', name: 'Rose Obscure', type: 'Parfum · EDP', desc: 'Velvet black rose paired with dark plum, cinnamon bark, and deep labdanum resin.', price: 4600, size: '50ml', notes: ['Black Rose', 'Dark Plum', 'Cinnamon', 'Labdanum'], topNotes: 'Dark Plum, Pink Pepper', heartNotes: 'Black Damask Rose, Cinnamon', baseNotes: 'Labdanum Resin, Patchouli', longevity: '11-13 Hours', sillage: 'Strong Projection', stock: 15, gradient: 'linear-gradient(135deg, #260a12, #471120, #c9728b)' },
+                { id: 'p11', cat: 'parfum', name: 'Citron & Cedar', type: 'Parfum · EDP', desc: 'Bright Calabrian bergamot, crushed lemon leaf, and dry Atlas cedarwood.', price: 3800, size: '50ml', notes: ['Calabrian Bergamot', 'Lemon Zest', 'Atlas Cedar', 'Ambergris'], topNotes: 'Calabrian Bergamot, Lemon Zest', heartNotes: 'Cedar Needle, Petitgrain', baseNotes: 'Atlas Cedar, Ambergris', longevity: '7-9 Hours', sillage: 'Moderate Projection', stock: 15, gradient: 'linear-gradient(135deg, #1c1d0e, #363919, #d1c85a)' },
+                { id: 'p12', cat: 'parfum', name: 'Golden Incense', type: 'Parfum · EDP', desc: 'Omani frankincense tear drops, royal myrrh, labdanum, and golden benzoin resin.', price: 5100, size: '50ml', notes: ['Omani Frankincense', 'Myrrh', 'Labdanum', 'Benzoin'], topNotes: 'Frankincense Smoke, Cardamom', heartNotes: 'Royal Myrrh, Labdanum', baseNotes: 'Benzoin, Golden Amber', longevity: '12+ Hours', sillage: 'Heavy Sillage', stock: 15, gradient: 'linear-gradient(135deg, #261f0a, #473a11, #d4a937)' },
+                { id: 'p13', cat: 'parfum', name: 'Imperial Leather', type: 'Parfum · EDP', desc: 'Tuscan suede, wild raspberry accord, thyme, and smoky amber wood.', price: 5600, size: '50ml', notes: ['Tuscan Leather', 'Suede', 'Raspberry', 'Thyme'], topNotes: 'Thyme, Wild Raspberry', heartNotes: 'Tuscan Leather, Suede', baseNotes: 'Amberwood, Smoked Oud', longevity: '14+ Hours', sillage: 'Heavy Sillage', stock: 15, gradient: 'linear-gradient(135deg, #241108, #421e0d, #a8582d)' },
+                { id: 'p14', cat: 'parfum', name: 'Ethereal Spice', type: 'Parfum · EDP', desc: 'Warm cardamom pods, star anise, grated nutmeg, and liquid golden amber.', price: 4400, size: '50ml', notes: ['Cardamom', 'Star Anise', 'Nutmeg', 'Warm Amber'], topNotes: 'Star Anise, Nutmeg Zest', heartNotes: 'Green Cardamom, Clove', baseNotes: 'Warm Amber, Cedarwood', longevity: '10-12 Hours', sillage: 'Moderate-Heavy', stock: 15, gradient: 'linear-gradient(135deg, #21130a, #402312, #c78342)' },
+
+                // --- 10 ATTARS ---
+                { id: 'a1', cat: 'attar', name: 'Gulab-e-Shahi', type: 'Attar · Pure Oil', desc: 'Royal Kannauj rose, hydro-distilled in copper degs and aged in pure sandalwood oil.', price: 2600, size: '12ml', notes: ['Kannauj Rose', 'Mysore Sandalwood'], topNotes: 'Fresh Damask Rose Blossoms', heartNotes: 'Concentrated Rose Petal Oil', baseNotes: 'Pure Mysore Sandalwood Oil Base', longevity: '14+ Hours (Skin Contact)', sillage: 'Close Intimate Aura', stock: 15, gradient: 'linear-gradient(135deg, #2d0b13, #541121, #c98a72)' },
+                { id: 'a2', cat: 'attar', name: 'Oud Qadeem', type: 'Attar · Pure Oil', desc: '15-year aged wild Assam oud oil — dense, smoky, woody, and untamed.', price: 3400, size: '12ml', notes: ['Aged Assam Oud', 'Smoked Wood'], topNotes: 'Raw Resin, Smoked Bark', heartNotes: 'Deep Fermented Oud Heart', baseNotes: 'Aged Assam Oud Base', longevity: '24+ Hours (Unrivaled)', sillage: 'Heavy & Persistent', stock: 15, gradient: 'linear-gradient(135deg, #1c0c05, #3b1709, #8a3a22)' },
+                { id: 'a3', cat: 'attar', name: 'Mitti Attar', type: 'Attar · Pure Oil', desc: 'The sacred scent of first monsoon rain hitting baked clay earth. Distilled from baked clay into sandalwood.', price: 2400, size: '12ml', notes: ['Petrichor Accord', 'Baked Clay', 'Sandalwood'], topNotes: 'Fresh Petrichor Mist', heartNotes: 'Sun-Baked Clay Essence', baseNotes: 'Hydro-distilled Sandalwood', longevity: '10-12 Hours', sillage: 'Earthy & Calming', stock: 15, gradient: 'linear-gradient(135deg, #1f1710, #3d2d1f, #b8ac97)' },
+                { id: 'a4', cat: 'attar', name: 'Kewda Royale', type: 'Attar · Pure Oil', desc: 'Rare golden pandanus flower distilled into pure sandalwood oil. Exotic, honeyed, and floral.', price: 2800, size: '12ml', notes: ['Pandanus Flower', 'Honeyed Floral', 'Sandalwood'], topNotes: 'Fresh Kewda Flower Petals', heartNotes: 'Golden Nectar Accord', baseNotes: 'Creamy Sandalwood Base', longevity: '12-14 Hours', sillage: 'Luminous & Warm', stock: 15, gradient: 'linear-gradient(135deg, #241e0a, #473a11, #d6af36)' },
+                { id: 'a5', cat: 'attar', name: 'Champa Malai', type: 'Attar · Pure Oil', desc: 'Golden frangipani blossoms hydro-distilled into velvety sandalwood oil with white amber.', price: 2500, size: '12ml', notes: ['Frangipani', 'White Amber', 'Sandalwood'], topNotes: 'Golden Champa Flowers', heartNotes: 'Creamy Coconut Nectar', baseNotes: 'White Amber, Sandalwood', longevity: '12+ Hours', sillage: 'Soft Velvet Aura', stock: 15, gradient: 'linear-gradient(135deg, #211c0f, #40361a, #e6cd93)' },
+                { id: 'a6', cat: 'attar', name: 'Shamama Tul Amber', type: 'Attar · Pure Oil', desc: 'A secret blend of 40 natural herbs, roots, spices, and resins distilled together over 30 days.', price: 3800, size: '12ml', notes: ['40 Herb Blend', 'Spiced Amber', 'Saffron', 'Oud'], topNotes: 'Spiced Cardamom, Saffron Threads', heartNotes: 'Herbal Resin Complex', baseNotes: 'Aged Amber Oil, Sandalwood', longevity: '18+ Hours', sillage: 'Complex & Enveloping', stock: 15, gradient: 'linear-gradient(135deg, #2b1307, #52230a, #c96b28)' },
+                { id: 'a7', cat: 'attar', name: 'Khas 1000', type: 'Attar · Pure Oil', desc: 'Wild green vetiver roots distilled in traditional copper stills. Cooling, crisp, and earthy.', price: 2900, size: '12ml', notes: ['Green Vetiver Roots', 'Earth Accord', 'Cedar'], topNotes: 'Crisp Green Vetiver Root', heartNotes: 'Cooling Earth Essence', baseNotes: 'Wild Root Extracts', longevity: '14+ Hours', sillage: 'Earthy Freshness', stock: 15, gradient: 'linear-gradient(135deg, #0e1e12, #1a3821, #519e64)' },
+                { id: 'a8', cat: 'attar', name: 'Zaffran-e-Hind', type: 'Attar · Pure Oil', desc: 'First-pick Kashmiri saffron threads steeped directly into aged sandalwood oil.', price: 3600, size: '12ml', notes: ['Pure Saffron Threads', 'Warm Gold Amber', 'Sandalwood'], topNotes: 'Golden Kashmiri Saffron', heartNotes: 'Warm Honeyed Spice', baseNotes: 'Aged Sandalwood Oil', longevity: '14+ Hours', sillage: 'Rich & Regal Aura', stock: 15, gradient: 'linear-gradient(135deg, #2d1800, #542d00, #e6a12b)' },
+                { id: 'a9', cat: 'attar', name: 'Majmua Gold', type: 'Attar · Pure Oil', desc: 'The iconic Indian royal blend combining Khas, Kewda, Gulab, and Mitti attars in perfect harmony.', price: 3100, size: '12ml', notes: ['Quad-Attar Harmony', 'Khas', 'Kewda', 'Gulab'], topNotes: 'Kewda Nectar, Rose Petals', heartNotes: 'Mitti Earth & Green Khas', baseNotes: 'Sandalwood Co-Distillate', longevity: '16+ Hours', sillage: 'Harmonious & Rich', stock: 15, gradient: 'linear-gradient(135deg, #182110, #2c3c1e, #8aa644)' },
+                { id: 'a10', cat: 'attar', name: 'Ruh Khus Premium', type: 'Attar · Pure Oil', desc: '100% unadulterated wild black vetiver root oil — intense, dark green, cooling, and profound.', price: 2700, size: '12ml', notes: ['Wild Vetiver Oil', 'Dark Earth', 'Wood Resin'], topNotes: 'Intense Green Vetiver Smoke', heartNotes: 'Cooling Deep Root Essence', baseNotes: 'Pure Ruh Khus Concentrate', longevity: '16+ Hours', sillage: 'Deep Grounding Scent', stock: 15, gradient: 'linear-gradient(135deg, #0b1a0e, #14301a, #3e854e)' }
+            ];
+
+            /* ---------- PRELOADER & FONT RACE ---------- */
+            var preloader = document.getElementById('preloader');
+            var bar = document.getElementById('preloaderBar');
+            var preloaderMark = document.getElementById('preloaderMark');
+            requestAnimationFrame(function () { if (bar) bar.style.width = '100%'; });
+
+            var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+
+            function revealMarkChars() {
+                if (preloaderMark && !preloaderMark.dataset.split) {
+                    preloaderMark.dataset.split = 'true';
+                    splitChars(preloaderMark);
+                    setTimeout(function () {
+                        preloaderMark.querySelectorAll('.char').forEach(function (c) { c.classList.add('in'); });
+                    }, 50);
+                }
+            }
+
+            // Wait for custom fonts to load BEFORE splitting characters to prevent FOUT layout shift
+            fontsReady.then(function () {
+                html.classList.add('fonts-loaded');
+                revealMarkChars();
+            });
+
+            Promise.race([fontsReady, new Promise(function (res) { setTimeout(res, 1200); })]).then(function () {
+                setTimeout(finishLoad, 450);
+            });
+            setTimeout(finishLoad, 2200);
+
+            var loaded = false;
+            function finishLoad() {
+                if (loaded) return; loaded = true;
+                html.classList.add('fonts-loaded');
+                revealMarkChars();
+                preloader.classList.add('done');
+                html.classList.add('loaded');
+                setTimeout(startCollectionAnimation, 150);
+            }
+
+            /* ---------- KINETIC CHARACTER SPLITTING ---------- */
+            function splitChars(el) {
+                var textNodes = [];
+                (function walk(node) {
+                    Array.prototype.forEach.call(node.childNodes, function (child) {
+                        if (child.nodeType === 3) textNodes.push(child);
+                    });
+                })(el);
+                if (!textNodes.length) return;
+                var mainNode = textNodes[0];
+                var text = mainNode.textContent.trim();
+                var frag = document.createDocumentFragment();
+                text.split('').forEach(function (ch, i) {
+                    var span = document.createElement('span');
+                    span.className = 'char';
+                    span.style.transitionDelay = (i * 45) + 'ms';
+                    span.textContent = ch === ' ' ? '\u00A0' : ch;
+                    frag.appendChild(span);
+                });
+                mainNode.parentNode.replaceChild(frag, mainNode);
+            }
+
+            /* ---------- WORD SPLITTING ON HEADING ELEMENTS ---------- */
+            function splitWords(el) {
+                var counter = 0;
+                var textNodes = [];
+                (function walk(node) {
+                    Array.prototype.forEach.call(node.childNodes, function (child) {
+                        if (child.nodeType === 3) textNodes.push(child);
+                        else if (child.nodeType === 1) walk(child);
+                    });
+                })(el);
+
+                textNodes.forEach(function (tn) {
+                    var parts = tn.textContent.split(/(\s+)/);
+                    var frag = document.createDocumentFragment();
+                    parts.forEach(function (part) {
+                        if (part === '') return;
+                        if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+                        var wrap = document.createElement('span');
+                        wrap.className = 'word';
+                        wrap.style.transitionDelay = (counter++ * 55) + 'ms';
+                        var inner = document.createElement('span');
+                        inner.textContent = part;
+                        wrap.appendChild(inner);
+                        frag.appendChild(wrap);
+                    });
+                    tn.parentNode.replaceChild(frag, tn);
+                });
+            }
+
+            document.querySelectorAll('h1.h-serif, h2.h-serif').forEach(function (h) {
+                splitWords(h);
+            });
+
+            function startCollectionAnimation() {
+                document.querySelectorAll('h1.h-serif .word').forEach(function (w) { w.classList.add('in'); });
+                document.querySelectorAll('.collection-eyebrow, .collection-sub, .collection-actions').forEach(function (el, i) {
+                    setTimeout(function () { el.classList.add('in'); }, 450 + i * 180);
+                });
+            }
+
+            /* ---------- INTERSECTION OBSERVER REVEALS ---------- */
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in');
+                            var words = entry.target.querySelectorAll('.word');
+                            words.forEach(function (w) { w.classList.add('in'); });
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -5% 0px' });
+
+                document.querySelectorAll('.reveal, h1.h-serif, h2.h-serif').forEach(function (el) { io.observe(el); });
+            } else {
+                document.querySelectorAll('.reveal, .word').forEach(function (el) { el.classList.add('in'); });
+            }
+
+            /* ---------- RENDER 24 PRODUCTS ---------- */
+            var grid = document.getElementById('collectionGrid');
+
+            function renderProducts(items) {
+                grid.innerHTML = '';
+                items.forEach(function (p) {
+                    var card = document.createElement('article');
+                    card.className = 'card tilt';
+                    card.dataset.cat = p.cat;
+
+                    var notesHTML = p.notes.map(function (n) { return '<span>' + n + '</span>'; }).join('');
+
+                    card.innerHTML = `
+                        <div class="card-badge-instock">IN STOCK</div>
+                        <div class="card-art-box" style="background:${p.gradient};">
+                            <svg class="card-art-bottle" viewBox="0 0 120 240">
+                                <rect x="28" y="95" width="64" height="125" rx="12" fill="#efe7d8" opacity="0.2" />
+                                <path d="M42 95 L46 60 Q47 50 57 50 L63 50 Q73 50 74 60 L78 95 Z" fill="#efe7d8" opacity="0.25" />
+                                <rect x="40" y="18" width="40" height="36" rx="7" fill="#c9a24b" />
+                                <rect x="45" y="140" width="30" height="2" fill="#c9a24b" />
+                            </svg>
+                        </div>
+                        <p class="eyebrow">${p.type}</p>
+                        <h3>${p.name}</h3>
+                        <p class="desc">${p.desc}</p>
+                        <div class="notes-list">${notesHTML}</div>
+                        <div class="card-foot">
+                            <div class="price-box">
+                                <span class="price">₹${p.price.toLocaleString()}</span>
+                                <span class="stock-label" style="color:var(--gold-soft);">In Stock (${p.size})</span>
+                            </div>
+                            <button class="btn-card-add" data-id="${p.id}">Add to Bag</button>
+                        </div>
+                    `;
+
+                    var addBtn = card.querySelector('.btn-card-add');
+                    if (addBtn) {
+                        addBtn.addEventListener('click', function (e) {
+                            e.stopPropagation();
+                            addToCart(p, 1);
+                        });
+                    }
+
+                    if (canHover && !reduceMotion) {
+                        card.addEventListener('mousemove', function (e) {
+                            var r = card.getBoundingClientRect();
+                            var px = (e.clientX - r.left) / r.width - 0.5;
+                            var py = (e.clientY - r.top) / r.height - 0.5;
+                            card.style.transform = 'perspective(1000px) rotateY(' + (px * 12) + 'deg) rotateX(' + (py * -12) + 'deg) translateY(-8px)';
+                        });
+                        card.addEventListener('mouseleave', function () {
+                            card.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(0px)';
+                        });
+                    }
+
+                    card.addEventListener('click', function () { openProductModal(p); });
+                    grid.appendChild(card);
+                });
+            }
+
+            renderProducts(PRODUCTS);
+
+            // Filter Tabs
+            var currentFilter = 'all';
+            var filterAllBtn = document.getElementById('filterAllBtn');
+            var filterParfumBtn = document.getElementById('filterParfumBtn');
+            var filterAttarBtn = document.getElementById('filterAttarBtn');
+
+            function applyFilter(cat, btn) {
+                currentFilter = cat;
+                [filterAllBtn, filterParfumBtn, filterAttarBtn].forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+                btn.setAttribute('aria-pressed', 'true');
+                filterAndSearch();
+            }
+
+            filterAllBtn.addEventListener('click', function () { applyFilter('all', filterAllBtn); });
+            filterParfumBtn.addEventListener('click', function () { applyFilter('parfum', filterParfumBtn); });
+            filterAttarBtn.addEventListener('click', function () { applyFilter('attar', filterAttarBtn); });
+
+            // Search input
+            var searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', filterAndSearch);
+
+            function filterAndSearch() {
+                var query = searchInput.value.toLowerCase().trim();
+                var filtered = PRODUCTS.filter(function (p) {
+                    var matchesFilter = (currentFilter === 'all' || p.cat === currentFilter);
+                    var matchesQuery = !query || p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query) || p.notes.some(function (n) { return n.toLowerCase().includes(query); });
+                    return matchesFilter && matchesQuery;
+                });
+                renderProducts(filtered);
+            }
+
+            /* ---------- MODALS & DRAWER ---------- */
+            var productModal = document.getElementById('productModal');
+            var modalClose = document.getElementById('modalClose');
+            var modalContent = document.getElementById('modalContent');
+
+            function openProductModal(p) {
+                modalContent.innerHTML = `
+                    <div class="modal-header-brand">
+                        <img src="assets/logo.jpg" alt="Auravé Logo" class="brand-logo-img" style="width:54px;height:54px;">
+                        <div>
+                            <p class="eyebrow">${p.type}</p>
+                            <h2 class="h-serif" style="font-size:1.8rem;color:var(--bone);">${p.name}</h2>
+                        </div>
+                    </div>
+                    <p style="color:var(--bone-dim);font-size:0.95rem;margin-bottom:1rem;">${p.desc}</p>
+                    
+                    <div class="metrics-row">
+                        <div class="metric-pill">
+                            <span>Longevity Rating</span>
+                            ${p.longevity}
+                        </div>
+                        <div class="metric-pill">
+                            <span>Sillage &amp; Projection</span>
+                            ${p.sillage}
+                        </div>
+                    </div>
+
+                    <div class="scent-pyramid">
+                        <div style="font-family:var(--font-display);font-size:0.9rem;color:var(--gold-soft);margin-bottom:0.6rem;letter-spacing:0.1em;text-transform:uppercase;">✦ Scent Note Pyramid</div>
+                        <div class="scent-pyramid-row">
+                            <span class="scent-label">Top Notes:</span>
+                            <span class="scent-val">${p.topNotes}</span>
+                        </div>
+                        <div class="scent-pyramid-row">
+                            <span class="scent-label">Heart Notes:</span>
+                            <span class="scent-val">${p.heartNotes}</span>
+                        </div>
+                        <div class="scent-pyramid-row">
+                            <span class="scent-label">Base Notes:</span>
+                            <span class="scent-val">${p.baseNotes}</span>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--line);">
+                        <div>
+                            <span class="price" style="font-size:1.5rem;">₹${p.price.toLocaleString()}</span>
+                            <span style="font-size:0.75rem;color:var(--gold-soft);display:block;">In Stock — ${p.size} Bottle</span>
+                        </div>
+                        <span class="card-badge-instock" style="position:static;">AVAILABLE IN STOCK</span>
+                    </div>
+
+                    <div class="modal-restock-box" style="background:rgba(24, 20, 16, 0.9);border:1px solid rgba(223, 192, 123, 0.3);">
+                        <h4 style="color:#f7eedb;font-size:1.1rem;margin-bottom:0.4rem;">Select Quantity &amp; Add to Bag</h4>
+                        <p style="font-size:0.85rem;color:var(--bone-dim);margin-bottom:1rem;">Includes complimentary signature luxury box, velvet pouch, and scent tester.</p>
+                        <div style="display:flex;gap:0.8rem;align-items:center;">
+                            <div class="cart-qty-ctrl" style="padding:0.4rem 0.8rem;">
+                                <button class="cart-qty-btn" id="modalQtyMinus">-</button>
+                                <span id="modalQtyVal" style="font-size:1rem;color:#f7eedb;font-weight:600;min-width:24px;text-align:center;">1</span>
+                                <button class="cart-qty-btn" id="modalQtyPlus">+</button>
+                            </div>
+                            <button class="btn btn-primary" id="modalAddToCartBtn" style="flex:1;">Add to Bag — ₹${p.price.toLocaleString()}</button>
+                        </div>
+                        <p id="modalCartSuccessMsg" style="display:none;color:var(--gold-soft);font-size:0.88rem;margin-top:0.8rem;text-align:center;">✓ Item added to your Shopping Bag!</p>
+                    </div>
+                `;
+
+                productModal.classList.add('active');
+
+                var modalQtyMinus = document.getElementById('modalQtyMinus');
+                var modalQtyPlus = document.getElementById('modalQtyPlus');
+                var modalQtyVal = document.getElementById('modalQtyVal');
+                var modalAddToCartBtn = document.getElementById('modalAddToCartBtn');
+                var modalCartSuccessMsg = document.getElementById('modalCartSuccessMsg');
+
+                var selectedQty = 1;
+                modalQtyMinus.addEventListener('click', function () {
+                    if (selectedQty > 1) {
+                        selectedQty--;
+                        modalQtyVal.textContent = selectedQty;
+                        modalAddToCartBtn.textContent = 'Add to Bag — ₹' + (p.price * selectedQty).toLocaleString();
+                    }
+                });
+                modalQtyPlus.addEventListener('click', function () {
+                    selectedQty++;
+                    modalQtyVal.textContent = selectedQty;
+                    modalAddToCartBtn.textContent = 'Add to Bag — ₹' + (p.price * selectedQty).toLocaleString();
+                });
+
+                modalAddToCartBtn.addEventListener('click', function () {
+                    addToCart(p, selectedQty);
+                    modalCartSuccessMsg.style.display = 'block';
+                    setTimeout(function () { modalCartSuccessMsg.style.display = 'none'; }, 2000);
+                });
+            }
+
+            modalClose.addEventListener('click', function () { productModal.classList.remove('active'); });
+            productModal.addEventListener('click', function (e) { if (e.target === productModal) productModal.classList.remove('active'); });
+
+            /* ---------- SHOPPING CART STATE MANAGEMENT ---------- */
+            var CART = [];
+            try {
+                CART = JSON.parse(localStorage.getItem('aurave_cart') || '[]');
+            } catch (e) { CART = []; }
+
+            function saveCart() {
+                try {
+                    localStorage.setItem('aurave_cart', JSON.stringify(CART));
+                } catch (e) { }
+                updateCartUI();
+            }
+
+            function updateCartUI() {
+                var totalCount = CART.reduce(function (acc, item) { return acc + item.qty; }, 0);
+                var badge = document.getElementById('cartBadge');
+                if (badge) badge.textContent = totalCount;
+
+                var cartItemList = document.getElementById('cartItemList');
+                var cartSubtotalVal = document.getElementById('cartSubtotalVal');
+
+                if (!cartItemList) return;
+
+                if (CART.length === 0) {
+                    cartItemList.innerHTML = '<div style="text-align:center;padding:2.5rem 1rem;color:var(--bone-dim);"><p style="font-size:1rem;margin-bottom:0.4rem;color:#f7eedb;">Your Shopping Bag is currently empty.</p><p style="font-size:0.82rem;">Explore our collection of 14 Parfums and 10 Attars to test your order.</p></div>';
+                    if (cartSubtotalVal) cartSubtotalVal.textContent = '₹0';
+                    return;
+                }
+
+                var subtotal = 0;
+                var htmlStr = '';
+
+                CART.forEach(function (item, index) {
+                    var lineTotal = item.price * item.qty;
+                    subtotal += lineTotal;
+
+                    htmlStr += `
+                        <div class="cart-item-row">
+                            <div>
+                                <h4 style="font-family:var(--font-serif);font-size:1.1rem;color:#f7eedb;margin-bottom:0.2rem;">${item.name}</h4>
+                                <p style="font-size:0.78rem;color:var(--gold-soft);">${item.type} · ${item.size}</p>
+                                <span style="font-size:0.88rem;color:var(--bone);display:block;margin-top:0.3rem;">₹${item.price.toLocaleString()}</span>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:0.8rem;">
+                                <div class="cart-qty-ctrl">
+                                    <button class="cart-qty-btn" onclick="window.auraveChangeQty(${index}, -1)">-</button>
+                                    <span style="font-size:0.88rem;color:#f7eedb;font-weight:600;min-width:18px;text-align:center;">${item.qty}</span>
+                                    <button class="cart-qty-btn" onclick="window.auraveChangeQty(${index}, 1)">+</button>
+                                </div>
+                                <button onclick="window.auraveRemoveItem(${index})" style="background:none;border:none;color:var(--rose);cursor:pointer;font-size:1.2rem;padding:0.2rem;" title="Remove">&times;</button>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                cartItemList.innerHTML = htmlStr;
+                if (cartSubtotalVal) cartSubtotalVal.textContent = '₹' + subtotal.toLocaleString();
+            }
+
+            window.auraveChangeQty = function (index, delta) {
+                if (!CART[index]) return;
+                CART[index].qty += delta;
+                if (CART[index].qty <= 0) {
+                    CART.splice(index, 1);
+                }
+                saveCart();
+            };
+
+            window.auraveRemoveItem = function (index) {
+                if (!CART[index]) return;
+                CART.splice(index, 1);
+                saveCart();
+            };
+
+            function addToCart(p, qty) {
+                qty = qty || 1;
+                var existing = CART.find(function (item) { return item.id === p.id; });
+                if (existing) {
+                    existing.qty += qty;
+                } else {
+                    CART.push({
+                        id: p.id,
+                        name: p.name,
+                        type: p.type,
+                        size: p.size,
+                        price: p.price,
+                        qty: qty
+                    });
+                }
+                saveCart();
+                document.getElementById('cartDrawer').classList.add('active');
+            }
+
+            var cartDrawer = document.getElementById('cartDrawer');
+            var cartOpenBtn = document.getElementById('cartOpenBtn');
+            var cartClose = document.getElementById('cartClose');
+
+            cartOpenBtn.addEventListener('click', function () { cartDrawer.classList.add('active'); });
+            cartClose.addEventListener('click', function () { cartDrawer.classList.remove('active'); });
+            cartDrawer.addEventListener('click', function (e) { if (e.target === cartDrawer) cartDrawer.classList.remove('active'); });
+
+            /* ---------- PRODUCTION CHECKOUT LOGIC ---------- */
+            var checkoutModal = document.getElementById('checkoutModal');
+            var openCheckoutBtn = document.getElementById('openCheckoutBtn');
+            var checkoutClose = document.getElementById('checkoutClose');
+            var checkoutForm = document.getElementById('checkoutForm');
+            var checkoutFormBox = document.getElementById('checkoutFormBox');
+            var checkoutSuccessBox = document.getElementById('checkoutSuccessBox');
+            var coDoneBtn = document.getElementById('coDoneBtn');
+
+            if (openCheckoutBtn) {
+                openCheckoutBtn.addEventListener('click', function () {
+                    if (CART.length === 0) {
+                        alert('Your Shopping Bag is empty. Please add items to proceed to checkout.');
+                        return;
+                    }
+                    var totalCount = CART.reduce(function (acc, item) { return acc + item.qty; }, 0);
+                    var subtotal = CART.reduce(function (acc, item) { return acc + (item.price * item.qty); }, 0);
+                    
+                    document.getElementById('coItemSummaryText').textContent = totalCount + ' Item(s)';
+                    document.getElementById('coTotalVal').textContent = '₹' + subtotal.toLocaleString();
+                    
+                    checkoutFormBox.style.display = 'block';
+                    checkoutSuccessBox.style.display = 'none';
+                    cartDrawer.classList.remove('active');
+                    checkoutModal.classList.add('active');
+                });
+            }
+
+            if (checkoutClose) {
+                checkoutClose.addEventListener('click', function () { checkoutModal.classList.remove('active'); });
+            }
+
+            if (checkoutModal) {
+                checkoutModal.addEventListener('click', function (e) {
+                    if (e.target === checkoutModal) checkoutModal.classList.remove('active');
+                });
+            }
+
+            if (checkoutForm) {
+                checkoutForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var name = document.getElementById('coFullName').value.trim();
+                    var phone = document.getElementById('coPhone').value.trim();
+                    var email = document.getElementById('coEmail').value.trim();
+                    var address = document.getElementById('coAddress').value.trim();
+                    var pincode = document.getElementById('coPincode').value.trim();
+                    var city = document.getElementById('coCity').value.trim();
+                    var payMethod = document.getElementById('coPaymentMethod').value;
+
+                    var total = CART.reduce(function (acc, item) { return acc + (item.price * item.qty); }, 0);
+                    var orderRef = 'AV-' + Math.floor(100000 + Math.random() * 900000);
+
+                    var orderObj = {
+                        orderId: orderRef,
+                        customer: { name: name, phone: phone, email: email, address: address, pincode: pincode, city: city },
+                        paymentMethod: payMethod,
+                        items: CART,
+                        totalAmount: total,
+                        date: new Date().toISOString()
+                    };
+
+                    try {
+                        var existingOrders = JSON.parse(localStorage.getItem('aurave_orders') || '[]');
+                        existingOrders.push(orderObj);
+                        localStorage.setItem('aurave_orders', JSON.stringify(existingOrders));
+                    } catch (err) {}
+
+                    if (payMethod === 'WhatsApp') {
+                        var itemLines = CART.map(function(i){ return i.name + ' (' + i.size + ') x' + i.qty + ' - ₹' + (i.price * i.qty).toLocaleString(); }).join('\n');
+                        var msg = 'Hello AURAVÉ Concierge!\n\nI would like to place an order:\n' + itemLines + '\n\nTotal: ₹' + total.toLocaleString() + '\n\nCustomer Details:\nName: ' + name + '\nPhone: ' + phone + '\nAddress: ' + address + ', ' + city + ' - ' + pincode + '\nOrder Ref: #' + orderRef;
+                        var waUrl = 'https://wa.me/?text=' + encodeURIComponent(msg);
+                        window.open(waUrl, '_blank');
+                    }
+
+                    document.getElementById('coOrderRef').textContent = '#' + orderRef;
+                    checkoutFormBox.style.display = 'none';
+                    checkoutSuccessBox.style.display = 'block';
+
+                    CART = [];
+                    saveCart();
+                });
+            }
+
+            if (coDoneBtn) {
+                coDoneBtn.addEventListener('click', function () {
+                    checkoutModal.classList.remove('active');
+                });
+            }
+
+            updateCartUI();
+
+            /* ---------- CURSOR ---------- */
+            var canHover = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+            var ring = document.getElementById('cursorRing');
+            var dot = document.getElementById('cursorDot');
+
+            if (canHover && !reduceMotion) {
+                html.classList.add('has-cursor');
+                var mx = 0, my = 0, rx = 0, ry = 0;
+                window.addEventListener('mousemove', function (e) {
+                    mx = e.clientX; my = e.clientY;
+                    dot.style.transform = 'translate(' + mx + 'px,' + my + 'px) translate(-50%,-50%)';
+                });
+                function loop() {
+                    rx += (mx - rx) * 0.16; ry += (my - ry) * 0.16;
+                    ring.style.transform = 'translate(' + rx + 'px,' + ry + 'px) translate(-50%,-50%)';
+                    requestAnimationFrame(loop);
+                }
+                loop();
+            }
+
+            // Mobile menu
+            var burger = document.getElementById('burger');
+            burger.addEventListener('click', function () {
+                var open = html.classList.toggle('menu-open');
+                burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+
+            // Grain SVG
+            var grain = document.querySelector('.grain');
+            if (grain) {
+                grain.innerHTML = '<svg width="100%" height="100%"><filter id="noiseF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter><rect width="100%" height="100%" filter="url(#noiseF)"/></svg>';
+            }
+
+        })();
+    </script>
+</body>
+
+</html>
