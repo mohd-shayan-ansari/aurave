@@ -975,12 +975,13 @@
         }
 
         #scrollTopMistCanvas {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 200px;
-            height: 250px;
+            width: 100vw;
+            height: 100vh;
             pointer-events: none;
+            z-index: 99998;
         }
 
         .aurave-mini-bottle {
@@ -1475,6 +1476,7 @@
         </div>
     <!-- AURAVÉ SIGNATURE SCROLL-TO-TOP BOTTLE SPRAY -->
     <div class="aurave-scrollTop-wrap" id="scrollTopWrap" aria-label="Scroll to top">
+        <canvas id="scrollTopMistCanvas"></canvas>
         <button class="aurave-scrollTop-btn" id="scrollTopBtn" title="Return to Top" aria-label="Return to top">
             <svg class="aurave-scrollTop-icon" viewBox="0 0 32 32" width="28" height="28" fill="none">
                 <!-- Spray Rays -->
@@ -1490,7 +1492,6 @@
         </button>
 
         <div class="aurave-scrollTop-stage" id="scrollTopStage">
-            <canvas id="scrollTopMistCanvas" width="200" height="250"></canvas>
             <div class="aurave-mini-bottle" id="scrollTopBottle">
                 <svg viewBox="0 0 100 160" width="56" height="90">
                     <defs>
@@ -2187,7 +2188,7 @@
                 grain.innerHTML = '<svg width="100%" height="100%"><filter id="noiseF"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter><rect width="100%" height="100%" filter="url(#noiseF)"/></svg>';
             }
 
-            /* ---------- AURAVÉ CINEMATIC SPRAY SCROLL-TO-TOP ---------- */
+            /* ---------- AURAVÉ CINEMATIC FULL-SCREEN SPRAY SCROLL-TO-TOP ---------- */
             (function () {
                 var scrollTopWrap = document.getElementById('scrollTopWrap');
                 var scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -2200,6 +2201,13 @@
                 var isAnimating = false;
                 var particles = [];
                 var animFrame = null;
+
+                function resizeCanvas() {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                }
+                window.addEventListener('resize', resizeCanvas, { passive: true });
+                resizeCanvas();
 
                 function checkScrollPosition() {
                     if (isAnimating) return;
@@ -2216,22 +2224,25 @@
                 function Particle(x, y) {
                     this.x = x;
                     this.y = y;
-                    var angle = (Math.random() * 50 - 115) * (Math.PI / 180);
-                    var speed = Math.random() * 4.2 + 2.8;
+                    var angle = (Math.random() * 90 - 175) * (Math.PI / 180);
+                    var speed = Math.random() * 20 + 8;
                     this.vx = Math.cos(angle) * speed;
                     this.vy = Math.sin(angle) * speed;
-                    this.size = Math.random() * 2.2 + 1.2;
-                    this.alpha = Math.random() * 0.55 + 0.35;
-                    this.decay = Math.random() * 0.02 + 0.015;
-                    this.color = Math.random() > 0.4 ? '247, 238, 219' : '223, 192, 123';
+                    
+                    var isVapor = Math.random() > 0.65;
+                    this.isVapor = isVapor;
+                    this.size = isVapor ? (Math.random() * 16 + 8) : (Math.random() * 3.5 + 1.2);
+                    this.alpha = isVapor ? (Math.random() * 0.22 + 0.1) : (Math.random() * 0.65 + 0.35);
+                    this.decay = isVapor ? (Math.random() * 0.008 + 0.005) : (Math.random() * 0.014 + 0.008);
+                    this.color = Math.random() > 0.3 ? '247, 238, 219' : '223, 192, 123';
                 }
 
                 Particle.prototype.update = function () {
                     this.x += this.vx;
                     this.y += this.vy;
-                    this.vx *= 0.96;
-                    this.vy *= 0.96;
-                    this.size += 0.07;
+                    this.vx *= 0.97;
+                    this.vy *= 0.97;
+                    this.size += this.isVapor ? 0.45 : 0.12;
                     this.alpha -= this.decay;
                 };
 
@@ -2241,16 +2252,22 @@
                     c.beginPath();
                     c.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                     c.fillStyle = 'rgba(' + this.color + ',' + this.alpha + ')';
-                    c.shadowColor = 'rgba(223, 192, 123, 0.35)';
-                    c.shadowBlur = 4;
+                    if (this.isVapor) {
+                        c.shadowColor = 'rgba(223, 192, 123, 0.4)';
+                        c.shadowBlur = 20;
+                    } else {
+                        c.shadowColor = 'rgba(247, 238, 219, 0.5)';
+                        c.shadowBlur = 6;
+                    }
                     c.fill();
                     c.restore();
                 };
 
                 function createMistBurst() {
-                    var nozzleX = 168;
-                    var nozzleY = 162;
-                    for (var i = 0; i < 45; i++) {
+                    resizeCanvas();
+                    var nozzleX = window.innerWidth - 65;
+                    var nozzleY = window.innerHeight - 85;
+                    for (var i = 0; i < 180; i++) {
                         particles.push(new Particle(nozzleX, nozzleY));
                     }
                 }
@@ -2299,11 +2316,11 @@
 
                         setTimeout(function () {
                             scrollTopBottle.classList.remove('spraying');
-                        }, 250);
+                        }, 300);
 
                         var startY = window.scrollY;
                         var startTime = performance.now();
-                        var duration = 1200;
+                        var duration = 1300;
 
                         function scrollStep(currentTime) {
                             var elapsed = currentTime - startTime;
